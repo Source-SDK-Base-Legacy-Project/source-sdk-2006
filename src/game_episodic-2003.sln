@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "client_episodic", "cl_dll\client_episodic-2003.vcproj", "{F718A768-F57A-4BDC-BAD0-A2C8EA64B57F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "server_episodic", "dlls\server_episodic-2003.vcproj", "{1DD1643C-C791-40AC-AF5A-A2438A30FDCA}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug Episodic = Debug Episodic
+		Release Episodic = Release Episodic
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F718A768-F57A-4BDC-BAD0-A2C8EA64B57F}.Debug Episodic.ActiveCfg = Debug Episodic|Win32
+		{F718A768-F57A-4BDC-BAD0-A2C8EA64B57F}.Debug Episodic.Build.0 = Debug Episodic|Win32
+		{F718A768-F57A-4BDC-BAD0-A2C8EA64B57F}.Release Episodic.ActiveCfg = Release Episodic|Win32
+		{F718A768-F57A-4BDC-BAD0-A2C8EA64B57F}.Release Episodic.Build.0 = Release Episodic|Win32
+		{1DD1643C-C791-40AC-AF5A-A2438A30FDCA}.Debug Episodic.ActiveCfg = Debug Episodic|Win32
+		{1DD1643C-C791-40AC-AF5A-A2438A30FDCA}.Debug Episodic.Build.0 = Debug Episodic|Win32
+		{1DD1643C-C791-40AC-AF5A-A2438A30FDCA}.Release Episodic.ActiveCfg = Release Episodic|Win32
+		{1DD1643C-C791-40AC-AF5A-A2438A30FDCA}.Release Episodic.Build.0 = Release Episodic|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
