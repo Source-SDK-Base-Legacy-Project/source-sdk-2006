@@ -23,8 +23,8 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				OptimizeForProcessor="2"
-				AdditionalIncludeDirectories=".\hl2_hud,.\hl2_hud\elements,../game_shared/hl2,.,.\..\Public,.\..\Public\tier1,.\..\vgui2\include,.\..\vgui2\controls,../game_shared,.\game_controls"
-				PreprocessorDefinitions="HL2_CLIENT_DLL;HL2_EPISODIC;_DEBUG;fopen=dont_use_fopen;NO_STRING_T;CLIENT_DLL;_WINDOWS;VECTOR;strncpy=use_Q_strncpy_instead;_snprintf=use_Q_snprintf_instead;_WIN32;PROTECTED_THINGS_ENABLE"
+				AdditionalIncludeDirectories=".\hl2_hud;.\hl2_hud\elements;../game_shared/hl2;.;.\..\Public;.\..\Public\tier1;.\..\vgui2\include;.\..\vgui2\controls;../game_shared;.\game_controls"
+				PreprocessorDefinitions="HL2_CLIENT_DLL;_DEBUG;fopen=dont_use_fopen;NO_STRING_T;CLIENT_DLL;_WINDOWS;VECTOR;strncpy=use_Q_strncpy_instead;_snprintf=use_Q_snprintf_instead;_WIN32;PROTECTED_THINGS_ENABLE"
 				ExceptionHandling="FALSE"
 				RuntimeLibrary="5"
 				ForceConformanceInForLoopScope="TRUE"
@@ -110,8 +110,8 @@ copy &quot;$(TargetDir)&quot;client.dll &quot;..\..\game\hl2\bin&quot;
 				EnableIntrinsicFunctions="TRUE"
 				FavorSizeOrSpeed="1"
 				OptimizeForProcessor="3"
-				AdditionalIncludeDirectories=".\hl2_hud,.\hl2_hud\elements,../game_shared/hl2,.,.\..\Public,.\..\Public\tier1,.\..\vgui2\include,.\..\vgui2\controls,../game_shared,.\game_controls"
-				PreprocessorDefinitions="HL2_CLIENT_DLL;HL2_EPISODIC;NDEBUG;NO_STRING_T;CLIENT_DLL;_WINDOWS;VECTOR;strncpy=use_Q_strncpy_instead;_snprintf=use_Q_snprintf_instead;_WIN32;PROTECTED_THINGS_ENABLE"
+				AdditionalIncludeDirectories=".\hl2_hud;.\hl2_hud\elements;../game_shared/hl2;.;.\..\Public;.\..\Public\tier1;.\..\vgui2\include;.\..\vgui2\controls;../game_shared;.\game_controls"
+				PreprocessorDefinitions="HL2_CLIENT_DLL;NDEBUG;NO_STRING_T;CLIENT_DLL;_WINDOWS;VECTOR;strncpy=use_Q_strncpy_instead;_snprintf=use_Q_snprintf_instead;_WIN32;PROTECTED_THINGS_ENABLE"
 				StringPooling="TRUE"
 				ExceptionHandling="FALSE"
 				RuntimeLibrary="4"
@@ -2100,15 +2100,6 @@ if exist &quot;$(TargetDir)&quot;client.pdb copy &quot;$(TargetDir)&quot;client.
 			<Filter
 				Name="episodic"
 				Filter="">
-				<File
-					RelativePath=".\episodic\c_prop_coreball.cpp">
-				</File>
-				<File
-					RelativePath=".\episodic\c_weapon_hopwire.cpp">
-				</File>
-				<File
-					RelativePath=".\episodic\episodic_screenspaceeffects.cpp">
-				</File>
 			</Filter>
 		</Filter>
 		<Filter
@@ -2721,10 +2712,10 @@ if exist &quot;$(TargetDir)&quot;client.pdb copy &quot;$(TargetDir)&quot;client.
 				RelativePath="..\public\vgui\IImage.h">
 			</File>
 			<File
-				RelativePath="..\public\vgui\IInput.h">
+				RelativePath="iinput.h">
 			</File>
 			<File
-				RelativePath="iinput.h">
+				RelativePath="..\public\vgui\IInput.h">
 			</File>
 			<File
 				RelativePath="..\public\vgui\IInputInternal.h">
@@ -2964,10 +2955,10 @@ if exist &quot;$(TargetDir)&quot;client.pdb copy &quot;$(TargetDir)&quot;client.
 				RelativePath="..\public\tier1\mempool.h">
 			</File>
 			<File
-				RelativePath="menu.h">
+				RelativePath="..\public\vgui_controls\Menu.h">
 			</File>
 			<File
-				RelativePath="..\public\vgui_controls\Menu.h">
+				RelativePath="menu.h">
 			</File>
 			<File
 				RelativePath="..\public\vgui_controls\MenuItem.h">
@@ -3519,9 +3510,6 @@ if exist &quot;$(TargetDir)&quot;client.pdb copy &quot;$(TargetDir)&quot;client.
 			<Filter
 				Name="episodic"
 				Filter="">
-				<File
-					RelativePath=".\episodic\episodic_screenspaceeffects.h">
-				</File>
 			</Filter>
 			<Filter
 				Name="hl2_hud"

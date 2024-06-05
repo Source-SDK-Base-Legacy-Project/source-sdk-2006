@@ -22,8 +22,8 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				OptimizeForProcessor="2"
-				AdditionalIncludeDirectories="../game_shared/hl2,./,../Public,../Public/tier1,../game_shared,../utils/common,../dlls,../../dlls,../dlls/hl2_dll,./episodic"
-				PreprocessorDefinitions="HL2_EPISODIC;HL2_DLL;USES_SAVERESTORE;_DEBUG;fopen=dont_use_fopen;GAME_DLL;sprintf=use_Q_snprintf_instead_of_sprintf;_WINDOWS;VECTOR;strncpy=use_Q_strncpy_instead;_snprintf=use_Q_snprintf_instead;_WIN32;PROTECTED_THINGS_ENABLE"
+				AdditionalIncludeDirectories="../game_shared/hl2;./;../Public;../Public/tier1;../game_shared;../utils/common;../dlls;../../dlls;../dlls/hl2_dll"
+				PreprocessorDefinitions="HL2_DLL;USES_SAVERESTORE;_DEBUG;fopen=dont_use_fopen;GAME_DLL;sprintf=use_Q_snprintf_instead_of_sprintf;_WINDOWS;VECTOR;strncpy=use_Q_strncpy_instead;_snprintf=use_Q_snprintf_instead;_WIN32;PROTECTED_THINGS_ENABLE"
 				ExceptionHandling="FALSE"
 				RuntimeLibrary="5"
 				ForceConformanceInForLoopScope="TRUE"
@@ -107,8 +107,8 @@ if exist &quot;$(TargetDir)&quot;server.dll copy &quot;$(TargetDir)&quot;server.
 				EnableIntrinsicFunctions="TRUE"
 				FavorSizeOrSpeed="1"
 				OptimizeForProcessor="3"
-				AdditionalIncludeDirectories="../game_shared/hl2,./,../Public,../Public/tier1,../game_shared,../utils/common,../dlls,../../dlls,../dlls/hl2_dll,./episodic"
-				PreprocessorDefinitions="HL2_EPISODIC;HL2_DLL;USES_SAVERESTORE;NDEBUG;GAME_DLL;sprintf=use_Q_snprintf_instead_of_sprintf;_WINDOWS;VECTOR;strncpy=use_Q_strncpy_instead;_snprintf=use_Q_snprintf_instead;_WIN32;PROTECTED_THINGS_ENABLE"
+				AdditionalIncludeDirectories="../game_shared/hl2;./;../Public;../Public/tier1;../game_shared;../utils/common;../dlls;../../dlls;../dlls/hl2_dll"
+				PreprocessorDefinitions="HL2_DLL;USES_SAVERESTORE;NDEBUG;GAME_DLL;sprintf=use_Q_snprintf_instead_of_sprintf;_WINDOWS;VECTOR;strncpy=use_Q_strncpy_instead;_snprintf=use_Q_snprintf_instead;_WIN32;PROTECTED_THINGS_ENABLE"
 				StringPooling="TRUE"
 				ExceptionHandling="FALSE"
 				RuntimeLibrary="4"
@@ -2956,7 +2956,7 @@ if exist &quot;$(TargetDir)&quot;server.pdb copy &quot;$(TargetDir)&quot;server.
 					RelativePath="hl2_dll\monster_dummy.cpp">
 				</File>
 				<File
-					RelativePath=".\hl2_dll\npc_alyx_episodic.cpp">
+					RelativePath=".\hl2_dll\npc_alyx.cpp">
 				</File>
 				<File
 					RelativePath="hl2_dll\npc_antlion.cpp">
@@ -3007,7 +3007,7 @@ if exist &quot;$(TargetDir)&quot;server.pdb copy &quot;$(TargetDir)&quot;server.
 					RelativePath="hl2_dll\npc_citizen17.h">
 				</File>
 				<File
-					RelativePath=".\hl2_dll\npc_combine_episodic.cpp">
+					RelativePath=".\hl2_dll\npc_combine.cpp">
 				</File>
 				<File
 					RelativePath="hl2_dll\npc_combinecamera.cpp">
@@ -3434,24 +3434,6 @@ if exist &quot;$(TargetDir)&quot;server.pdb copy &quot;$(TargetDir)&quot;server.
 			<Filter
 				Name="episodic"
 				Filter="">
-				<File
-					RelativePath=".\episodic\ai_behavior_passenger_companion.cpp">
-				</File>
-				<File
-					RelativePath=".\episodic\ai_behavior_passenger_zombie.cpp">
-				</File>
-				<File
-					RelativePath=".\episodic\grenade_hopwire.cpp">
-				</File>
-				<File
-					RelativePath=".\episodic\prop_coreball.cpp">
-				</File>
-				<File
-					RelativePath=".\episodic\prop_stickybomb.cpp">
-				</File>
-				<File
-					RelativePath=".\episodic\vehicle_jeep_episodic.cpp">
-				</File>
 			</Filter>
 		</Filter>
 		<Filter
@@ -4096,18 +4078,6 @@ if exist &quot;$(TargetDir)&quot;server.pdb copy &quot;$(TargetDir)&quot;server.
 			<Filter
 				Name="episodic"
 				Filter="">
-				<File
-					RelativePath=".\episodic\ai_behavior_passenger_companion.h">
-				</File>
-				<File
-					RelativePath=".\episodic\ai_behavior_passenger_zombie.h">
-				</File>
-				<File
-					RelativePath=".\episodic\grenade_hopwire.h">
-				</File>
-				<File
-					RelativePath=".\episodic\vehicle_jeep_episodic.h">
-				</File>
 			</Filter>
 		</Filter>
 		<File
