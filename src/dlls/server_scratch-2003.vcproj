@@ -825,6 +825,12 @@ if exist &quot;$(TargetDir)&quot;server.dll copy &quot;$(TargetDir)&quot;server.
 				RelativePath="..\Public\CollisionUtils.h">
 			</File>
 			<File
+				RelativePath=".\colorcorrection.cpp">
+			</File>
+			<File
+				RelativePath=".\colorcorrectionvolume.cpp">
+			</File>
+			<File
 				RelativePath=".\CommentarySystem.cpp">
 			</File>
 			<File
