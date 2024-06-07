@@ -1052,6 +1052,12 @@ if exist &quot;$(TargetDir)&quot;server.pdb copy &quot;$(TargetDir)&quot;server.
 				RelativePath="..\game_shared\entityparticletrail_shared.h">
 			</File>
 			<File
+				RelativePath=".\env_debughistory.cpp">
+			</File>
+			<File
+				RelativePath=".\env_debughistory.h">
+			</File>
+			<File
 				RelativePath="..\game_shared\env_detail_controller.cpp">
 			</File>
 			<File
