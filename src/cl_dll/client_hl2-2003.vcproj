@@ -361,6 +361,9 @@ if exist &quot;$(TargetDir)&quot;client.pdb copy &quot;$(TargetDir)&quot;client.
 				RelativePath="c_env_screenoverlay.cpp">
 			</File>
 			<File
+				RelativePath=".\c_env_tonemap_controller.cpp">
+			</File>
+			<File
 				RelativePath="c_fire_smoke.cpp">
 			</File>
 			<File
@@ -2718,10 +2721,10 @@ if exist &quot;$(TargetDir)&quot;client.pdb copy &quot;$(TargetDir)&quot;client.
 				RelativePath="..\public\vgui\IImage.h">
 			</File>
 			<File
-				RelativePath="..\public\vgui\IInput.h">
+				RelativePath="iinput.h">
 			</File>
 			<File
-				RelativePath="iinput.h">
+				RelativePath="..\public\vgui\IInput.h">
 			</File>
 			<File
 				RelativePath="..\public\vgui\IInputInternal.h">
@@ -2961,10 +2964,10 @@ if exist &quot;$(TargetDir)&quot;client.pdb copy &quot;$(TargetDir)&quot;client.
 				RelativePath="..\public\tier1\mempool.h">
 			</File>
 			<File
-				RelativePath="menu.h">
+				RelativePath="..\public\vgui_controls\Menu.h">
 			</File>
 			<File
-				RelativePath="..\public\vgui_controls\Menu.h">
+				RelativePath="menu.h">
 			</File>
 			<File
 				RelativePath="..\public\vgui_controls\MenuItem.h">

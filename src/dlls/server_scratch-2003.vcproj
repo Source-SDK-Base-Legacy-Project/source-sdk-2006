@@ -1047,6 +1047,9 @@ if exist &quot;$(TargetDir)&quot;server.dll copy &quot;$(TargetDir)&quot;server.
 				RelativePath="env_texturetoggle.cpp">
 			</File>
 			<File
+				RelativePath=".\env_tonemap_controller.cpp">
+			</File>
+			<File
 				RelativePath="..\game_shared\env_wind_shared.cpp">
 			</File>
 			<File
