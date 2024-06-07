@@ -2525,6 +2525,9 @@ if exist &quot;$(TargetDir)&quot;server.pdb copy &quot;$(TargetDir)&quot;server.
 				RelativePath="..\game_shared\weapon_proficiency.h">
 			</File>
 			<File
+				RelativePath=".\weight_button.cpp">
+			</File>
+			<File
 				RelativePath="world.cpp">
 			</File>
 			<File
