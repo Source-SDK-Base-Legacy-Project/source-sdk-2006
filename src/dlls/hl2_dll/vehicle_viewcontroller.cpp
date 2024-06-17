@@ -29,7 +29,7 @@ public:
 
 	// CPropVehicle
 	virtual void	SetupMove( CBasePlayer *player, CUserCmd *ucmd, IMoveHelper *pHelper, CMoveData *move );
-	virtual void	EnterVehicle( CBasePlayer *pPlayer );
+	virtual void	EnterVehicle( CBaseCombatCharacter *pPassenger );
 	virtual void	ExitVehicle( int nRole );
 
 	// Inputs to force the player in/out of the vehicle
@@ -88,8 +88,9 @@ void CPropVehicleViewController::SetupMove( CBasePlayer *player, CUserCmd *ucmd,
 // Purpose: 
 //    NOTE: Doesn't call the base call enter vehicle on purpose!
 //-----------------------------------------------------------------------------
-void CPropVehicleViewController::EnterVehicle( CBasePlayer *pPlayer )
+void CPropVehicleViewController::EnterVehicle( CBaseCombatCharacter *pPassenger )
 {
+	CBasePlayer *pPlayer = ToBasePlayer( pPassenger );
 	if ( !pPlayer )
 		return;
 

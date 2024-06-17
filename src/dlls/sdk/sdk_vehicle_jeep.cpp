@@ -111,7 +111,7 @@ public:
 	virtual void	SetupMove( CBasePlayer *player, CUserCmd *ucmd, IMoveHelper *pHelper, CMoveData *move );
 	virtual void	Use( CBaseEntity *pActivator, CBaseEntity *pCaller, USE_TYPE useType, float value );
 	virtual void	DampenEyePosition( Vector &vecVehicleEyePos, QAngle &vecVehicleEyeAngles );
-	virtual bool	AllowBlockedExit( CBasePlayer *pPlayer, int nRole ) { return false; }
+	virtual bool	AllowBlockedExit( CBaseCombatCharacter *pPassenger, int nRole ) { return false; }
 	virtual bool	CanExitVehicle( CBaseEntity *pEntity );
 	virtual bool	IsVehicleBodyInWater() { return m_WaterData.m_bBodyInWater; }
 
@@ -125,7 +125,7 @@ public:
 	virtual Vector	BodyTarget( const Vector &posSrc, bool bNoisy = true );
 	virtual void	TraceAttack( const CTakeDamageInfo &info, const Vector &vecDir, trace_t *ptr );
 	virtual int		OnTakeDamage( const CTakeDamageInfo &info );
-	virtual void	EnterVehicle( CBasePlayer *pPlayer );
+	virtual void	EnterVehicle( CBaseCombatCharacter *pPassenger );
 	virtual void	ExitVehicle( int nRole );
 
 	void			AimGunAt( Vector *endPos, float flInterval );
@@ -1462,8 +1462,9 @@ void CPropJeep::CreateDangerSounds( void )
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-void CPropJeep::EnterVehicle( CBasePlayer *pPlayer )
+void CPropJeep::EnterVehicle( CBaseCombatCharacter *pPassenger )
 {
+	CBasePlayer *pPlayer = ToBasePlayer( pPassenger );
 	if ( !pPlayer )
 		return;
 

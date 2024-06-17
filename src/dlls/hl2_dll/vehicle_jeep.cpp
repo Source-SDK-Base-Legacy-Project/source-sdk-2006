@@ -1411,8 +1411,9 @@ void CPropJeep::CreateDangerSounds( void )
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-void CPropJeep::EnterVehicle( CBasePlayer *pPlayer )
+void CPropJeep::EnterVehicle( CBaseCombatCharacter *pPassenger )
 {
+	CBasePlayer *pPlayer = ToBasePlayer( pPassenger );
 	if ( !pPlayer )
 		return;
 

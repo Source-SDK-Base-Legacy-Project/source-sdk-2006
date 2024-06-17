@@ -99,10 +99,10 @@ public:
 	virtual Vector	BodyTarget( const Vector &posSrc, bool bNoisy );
 	virtual Vector	GetSmoothedVelocity( void );
 
-	virtual void	EnterVehicle( CBasePlayer *pPlayer );
+	virtual void	EnterVehicle( CBaseCombatCharacter *pPassenger );
 
-	virtual bool	AllowBlockedExit( CBasePlayer *pPlayer, int nRole ) { return false; }
-	virtual void	PreExitVehicle( CBasePlayer *pPlayer, int nRole );
+	virtual bool	AllowBlockedExit( CBaseCombatCharacter *pPassenger, int nRole ) { return false; }
+	virtual void	PreExitVehicle( CBaseCombatCharacter *pPassenger, int nRole );
 	virtual void	ExitVehicle( int nRole );
 
 	void			ComputePDControllerCoefficients( float *pCoefficientsOut, float flFrequency, float flDampening, float flDeltaTime );
@@ -638,9 +638,9 @@ void CPropAirboat::OnRestore()
 //-----------------------------------------------------------------------------
 // Used for navigation
 //-----------------------------------------------------------------------------
-void CPropAirboat::EnterVehicle( CBasePlayer *pPlayer )
+void CPropAirboat::EnterVehicle( CBaseCombatCharacter *pPassenger )
 {
-	BaseClass::EnterVehicle( pPlayer );
+	BaseClass::EnterVehicle( pPassenger );
 
 	//EnablePlayerBlocker( false );
 
@@ -659,7 +659,7 @@ void CPropAirboat::EnterVehicle( CBasePlayer *pPlayer )
 //-----------------------------------------------------------------------------
 // Purpose: Called when exiting, just before playing the exit animation.
 //-----------------------------------------------------------------------------
-void CPropAirboat::PreExitVehicle( CBasePlayer *pPlayer, int nRole )
+void CPropAirboat::PreExitVehicle( CBaseCombatCharacter *pPassenger, int nRole )
 {
 	if ( HeadlightIsOn() )
 	{
@@ -682,7 +682,7 @@ void CPropAirboat::PreExitVehicle( CBasePlayer *pPlayer, int nRole )
 	}
 #endif
 
-	BaseClass::PreExitVehicle( pPlayer, nRole );
+	BaseClass::PreExitVehicle( pPassenger, nRole );
 }
 
 
