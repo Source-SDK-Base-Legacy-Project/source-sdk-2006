@@ -24,7 +24,7 @@
 				Optimization="0"
 				OptimizeForProcessor="2"
 				AdditionalIncludeDirectories=".\hl2mp\UI,.\hl2mp,..\game_shared\hl2mp,.\hl2_hud,.\hl2_hud\elements,../game_shared/hl2,.,.\..\Public,.\..\Public\tier1,.\..\vgui2\include,.\..\vgui2\controls,../game_shared,.\game_controls"
-				PreprocessorDefinitions="HL2_EPISODIC;HL2MP;HL2_CLIENT_DLL;_DEBUG;fopen=dont_use_fopen;NO_STRING_T;CLIENT_DLL;_WINDOWS;VECTOR;strncpy=use_Q_strncpy_instead;_snprintf=use_Q_snprintf_instead;_WIN32;PROTECTED_THINGS_ENABLE"
+				PreprocessorDefinitions="HL2MP;HL2_CLIENT_DLL;_DEBUG;fopen=dont_use_fopen;NO_STRING_T;CLIENT_DLL;_WINDOWS;VECTOR;strncpy=use_Q_strncpy_instead;_snprintf=use_Q_snprintf_instead;_WIN32;PROTECTED_THINGS_ENABLE"
 				ExceptionHandling="FALSE"
 				RuntimeLibrary="5"
 				ForceConformanceInForLoopScope="TRUE"
@@ -111,7 +111,7 @@ copy &quot;$(TargetDir)&quot;client.dll &quot;..\..\game\hl2mp\bin&quot;
 				FavorSizeOrSpeed="1"
 				OptimizeForProcessor="3"
 				AdditionalIncludeDirectories=".\hl2_hud,.\hl2_hud\elements,../game_shared/hl2,.,.\..\Public,.\..\Public\tier1,.\..\vgui2\include,.\..\vgui2\controls,../game_shared,.\game_controls,.\hl2mp\UI,.\hl2mp,..\game_shared\hl2mp"
-				PreprocessorDefinitions="HL2_EPISODIC;HL2MP;HL2_CLIENT_DLL;NDEBUG;NO_STRING_T;CLIENT_DLL;_WINDOWS;VECTOR;strncpy=use_Q_strncpy_instead;_snprintf=use_Q_snprintf_instead;_WIN32;PROTECTED_THINGS_ENABLE"
+				PreprocessorDefinitions="HL2MP;HL2_CLIENT_DLL;NDEBUG;NO_STRING_T;CLIENT_DLL;_WINDOWS;VECTOR;strncpy=use_Q_strncpy_instead;_snprintf=use_Q_snprintf_instead;_WIN32;PROTECTED_THINGS_ENABLE"
 				StringPooling="TRUE"
 				ExceptionHandling="FALSE"
 				RuntimeLibrary="4"
@@ -2378,15 +2378,6 @@ if exist &quot;$(TargetDir)&quot;client.pdb copy &quot;$(TargetDir)&quot;client.
 			<Filter
 				Name="episodic"
 				Filter="">
-				<File
-					RelativePath=".\episodic\c_prop_coreball.cpp">
-				</File>
-				<File
-					RelativePath=".\episodic\c_weapon_hopwire.cpp">
-				</File>
-				<File
-					RelativePath=".\episodic\episodic_screenspaceeffects.cpp">
-				</File>
 			</Filter>
 		</Filter>
 		<Filter
@@ -3800,9 +3791,6 @@ if exist &quot;$(TargetDir)&quot;client.pdb copy &quot;$(TargetDir)&quot;client.
 			<Filter
 				Name="episodic"
 				Filter="">
-				<File
-					RelativePath=".\episodic\episodic_screenspaceeffects.h">
-				</File>
 			</Filter>
 		</Filter>
 		<File
