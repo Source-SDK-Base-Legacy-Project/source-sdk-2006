@@ -1,0 +1,23 @@
+"GameInfo"
+{
+	game 		"Source 2006 (Mod Episodic)"
+	title 		"Source 2006"
+	title2		"Mod Episodic"
+	type		singleplayer_only
+
+	FileSystem
+	{
+		SteamAppId				215
+		ToolsAppId				211
+		SearchPaths
+		{
+			Game				|gameinfo_path|.
+      Game				"{{source_2006_episodic_patches_path}}" // Apply specific EP1 2006 patches
+      Game				"{{source_2006_episodic_content_path}}" // Make sure EP1 2006 content has priority
+      Game				"{{source_2006_hl2_patches_path}}" // Apply specific HL2 2006 patches
+      Game				"{{source_2006_hl2_content_path}}" // Make sure HL2 2006 content has priority
+			Game				episodic
+			Game				hl2
+		}
+	}
+}
