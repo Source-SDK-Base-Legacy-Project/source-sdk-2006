@@ -12,8 +12,8 @@
 		SearchPaths
 		{
 			Game				|gameinfo_path|.
-      Game				"{{source_2006_hl2_patches_path}}" // Apply specific HL2 2006 patches
-      Game				"{{source_2006_hl2_content_path}}" // Make sure HL2 2006 content has priority
+			Game				"{{source_2006_hl2_patches_path}}" // Apply specific HL2 2006 patches
+			Game				"{{source_2006_hl2_content_path}}" // Make sure HL2 2006 content has priority
 			Game				hl2
 		}
 	}
