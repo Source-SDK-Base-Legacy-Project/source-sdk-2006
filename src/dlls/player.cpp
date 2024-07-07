@@ -153,7 +153,6 @@ ConVar	sk_player_leg( "sk_player_leg","1" );
 
 void CC_GiveCurrentAmmo( void )
 {
-#ifdef _XBOX 
 	CBasePlayer *pPlayer = UTIL_PlayerByIndex(1);
 
 	if( pPlayer )
@@ -190,7 +189,6 @@ void CC_GiveCurrentAmmo( void )
 			}
 		}
 	}
-#endif//_XBOX
 }
 static ConCommand givecurrentammo("givecurrentammo", CC_GiveCurrentAmmo, "Give a supply of ammo for current weapon..\n", FCVAR_CHEAT );
 
