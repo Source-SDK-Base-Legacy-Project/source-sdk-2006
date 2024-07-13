@@ -11,13 +11,14 @@
 		ToolsAppId				211
 		SearchPaths
 		{
-			Game				|gameinfo_path|.
-			Game				"{{source_2006_episodic_patches_path}}" // Apply specific EP1 2006 patches
-			Game				"{{source_2006_episodic_content_path}}" // Make sure EP1 2006 content has priority
-			Game				"{{source_2006_hl2_patches_path}}" // Apply specific HL2 2006 patches
-			Game				"{{source_2006_hl2_content_path}}" // Make sure HL2 2006 content has priority
-			Game				episodic
-			Game				hl2
+			Game	|gameinfo_path|.
+			Game	"${{source2006_episodic_patches_path}}" // Apply specific EP1 2006 patches
+			Game	"${{source2006_episodic_content_path}}" // Make sure EP1 2006 content has priority
+			Game	"${{source2006_episodic_maps_content_path}}" // Make sure EP1 2006 maps content has priority
+			Game	episodic
+			Game	"${{source2006_hl2_patches_path}}" // Apply specific HL2 2006 patches
+			Game	"${{source2006_hl2_content_path}}" // Make sure HL2 2006 content has priority
+			Game	hl2
 		}
 	}
 }

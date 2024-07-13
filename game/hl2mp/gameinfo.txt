@@ -20,13 +20,14 @@
 		SearchPaths
 		{
 			Game				|gameinfo_path|.
-			Game				"{{source_2006_hl2mp_patches_path}}" // Apply specific HL2MP 2006 patches
-			Game				"${{sdkbase2013mp_hl2mp_content_path}}"
-			Game				"{{source_2006_hl2_patches_path}}" // Apply specific HL2 2006 patches
-			Game				"{{source_2006_hl2_content_path}}" // Make sure HL2 2006 content has priority
+			Game				"${{source2006_hl2mp_patches_path}}" // Apply specific HL2MP 2006 patches
+			Game				"${{source2006_hl2mp_content_path}}" // Make sure HL2MP 2006 content has priority
+			Game				"${{hl2mp_maps_content_path}}" // Make sure HL2MP maps content has priority
 			Game				hl2mp
+			Game				"${{source2006_hl2_patches_path}}" // Apply specific HL2 2006 patches
+			Game				"${{source2006_hl2_content_path}}" // Make sure HL2 2006 content has priority
 			Game				hl2
-			Game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2 Deathmatch\hl2mp" // Add HL2MP .BSP maps
+			Game				"${{hl2mp_gamedir}}" // Add path to HL2MP .BSP maps
 		}
 	}
 }
