@@ -200,6 +200,11 @@ Scheme
 		"Main.Title1.Y"		"184"
 		"Main.Title1.Color"	"255 255 255 255"
 
+		// Top-left corner of secondary title e.g. "DEMO" on the main screen
+		"Main.Title2.X"		"314"
+		"Main.Title2.Y"		"242"
+		"Main.Title2.Color"	"255 255 255 200"
+
 		// Top-left corner of the menu on the main screen
 		"Main.Menu.X"		"76"
 		"Main.Menu.Y"		"240"
@@ -663,7 +668,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"  "HalfLife2"
+				"name"  "Verdana"
 				"tall"  "46"
 				"weight" "0"
 				"additive" "0"

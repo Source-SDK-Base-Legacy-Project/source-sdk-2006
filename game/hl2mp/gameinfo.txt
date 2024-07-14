@@ -1,8 +1,8 @@
 "GameInfo"
 {
 	game 		"Source 2006 (Mod HL2MP)"
-	title 		"Source 2006"
-	title2		"Mod HL2MP"
+	title	"HALF+LIFE'"
+	title2	"deathmatch"
 	type		multiplayer_only
 	nomodels 0
 	nohimodel 1

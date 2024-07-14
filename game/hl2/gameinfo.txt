@@ -1,8 +1,7 @@
 "GameInfo"
 {
 	game 		"Source 2006 (Mod HL2)"
-	title 		"Source 2006"
-	title2		"Mod HL2"
+	title 		"HALF-LIFE'"
 	type		singleplayer_only
 
 	FileSystem
