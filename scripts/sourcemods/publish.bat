@@ -12,6 +12,7 @@ set _root=..\..
 call ..\base\copy_dir.bat "%_root%\game\episodic" "%_sourcemodinstallpath%\source_2006_mod_episodic"
 call ..\base\copy_dir.bat "%_root%\game\hl2" "%_sourcemodinstallpath%\source_2006_mod_hl2"
 call ..\base\copy_dir.bat "%_root%\game\hl2mp" "%_sourcemodinstallpath%\source_2006_mod_hl2mp"
+call ..\base\copy_dir.bat "%_root%\game\lostcoast" "%_sourcemodinstallpath%\source_2006_mod_lostcoast"
 call ..\base\copy_dir.bat "%_root%\game\sdksample" "%_sourcemodinstallpath%\source_2006_mod_sdksample"
 
 endlocal
