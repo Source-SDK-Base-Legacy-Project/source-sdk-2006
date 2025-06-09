@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "client_hl2", "cl_dll\client_lostcoast-2003.vcproj", "{4A26A8BA-DED7-419A-93BF-014B7422DBC6}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "server_hl2", "dlls\server_lostcoast-2003.vcproj", "{B122E111-1691-4661-9F3F-0538AB2B592E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug LostCoast = Debug LostCoast
+		Release LostCoast = Release LostCoast
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4A26A8BA-DED7-419A-93BF-014B7422DBC6}.Debug LostCoast.ActiveCfg = Debug LostCoast|Win32
+		{4A26A8BA-DED7-419A-93BF-014B7422DBC6}.Debug LostCoast.Build.0 = Debug LostCoast|Win32
+		{4A26A8BA-DED7-419A-93BF-014B7422DBC6}.Release LostCoast.ActiveCfg = Release LostCoast|Win32
+		{4A26A8BA-DED7-419A-93BF-014B7422DBC6}.Release LostCoast.Build.0 = Release LostCoast|Win32
+		{B122E111-1691-4661-9F3F-0538AB2B592E}.Debug LostCoast.ActiveCfg = Debug LostCoast|Win32
+		{B122E111-1691-4661-9F3F-0538AB2B592E}.Debug LostCoast.Build.0 = Debug LostCoast|Win32
+		{B122E111-1691-4661-9F3F-0538AB2B592E}.Release LostCoast.ActiveCfg = Release LostCoast|Win32
+		{B122E111-1691-4661-9F3F-0538AB2B592E}.Release LostCoast.Build.0 = Release LostCoast|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
